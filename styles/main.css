@@ -13,56 +13,98 @@ body{
     width: 100px;
     height: 100px;
     margin: 20px;
-    animation-name: squ;
-    transition: 3s;
-    animation: squ 1s;
+    animation-name: squ1;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 .squ2{
-    background-color: rgb(73, 73, 73);
+    background-color: gray;
     width: 100px;
     height: 100px;
     margin: 20px;
     animation-name: squ2;
-    transition: 3s;
-    animation: squ 1s;
-    animation-delay: 0.2s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
 .squ3{
-    background-color: rgb(172, 172, 172);
+    background-color: grey;
     width: 100px;
     height: 100px;
     margin: 20px;
     animation-name: squ3;
-    transition: 3s;
-    animation: squ 1s;
-    animation-delay: 0.4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
 .squ4{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 100px;
     height: 100px;
     margin: 20px;
     animation-name: squ4;
-    animation: squ 1s;
-    animation-delay: 0.6s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
-
-@keyframes squ{
-    from{
-        background-color: rgb(255, 255, 255);
-    }
-    to{
-        background-color: rgb(0, 0, 0);
-    }
+@keyframes squ1 {
+    from {transform: none;  }
+    20%{  background-color: gray  }
+    40%{  background-color: gray  }
+    60%{background-color: white }
+    80% {background-color: white}
+    to {background-color: gray    }
 }
+@keyframes squ2 {
+    from {transform: none;}
+    20%{  background-color: black  }
+    40%{  background-color: gray  }
+    60%{background-color: white }
+    80% {background-color: gray}
+    to {background-color: black    }
+}
+@keyframes squ3 {
+    from {transform: none;}
+    20%{  background-color: gray  }
+    40%{  background-color: black  }
+    60%{background-color: gray }
+    80% {background-color: black}
+    to {background-color: gray    }
+}
+@keyframes squ4 {
+    from {transform: none;}
+    20%{  background-color: white  }
+    40%{  background-color: gray  }
+    60%{background-color: black }
+    80% {background-color: gray}
+    to {background-color: white    }
+}
+/* @keyframes squ1 {
+    from {transform: none;}
+    25%{  background-color: gray  }
+    50%{background-color: white }
+    75% {background-color: gray}
+    to {background-color: black    }
+}
+@keyframes squ2 {
+    from {transform: none;}
+    25%{  background-color: black }
+    50%{background-color: gray }
+    75% {background-color: black }
+    to {background-color: gray    }
+}
+@keyframes squ3 {
+    from {transform: none; }
+    25%{  background-color: black  }
+    50%{background-color: gray }
+    75% {background-color: black  }
+    to {background-color: gray    }
+}
+@keyframes squ4 {
+    from {transform: none; }
+    25%{  background-color: gray  }
+    50%{background-color: black }
+    75% {background-color: gray  }
+    to {background-color: white   }
+} */
